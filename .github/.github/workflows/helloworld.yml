@@ -1,0 +1,15 @@
+name : "hello world workflow"
+
+on: 
+  push:
+    branches:
+      - master
+      - production
+
+
+jobs:  
+    hello_world:
+      runs-on: ubuntu-latest   
+      steps:
+        - name: "Hello World Step"  
+          run: echo "Hello, World! This is a GitHub Actions workflow."   
